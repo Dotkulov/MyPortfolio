@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тимур Доткулов - Веб-разработчик | Портфолио</title>
+    <meta name="description"
+        content="Персональный сайт-портфолио веб-разработчика Тимура Доткулова. Создание современных и адаптивных сайтов.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="parallax-container">
+        <div class="parallax-layer" data-depth="0.1"></div>
+        <div class="parallax-layer" data-depth="0.3"></div>
+        <div class="parallax-layer" data-depth="0.5"></div>
+        <div class="parallax-layer" data-depth="0.7"></div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <a href="" class="logo">
+                <strong>Тимур Доткулов</strong> / Веб-разработчик / GameDev
+            </a>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="box-of-star1">
+                <div class="star star-position1"></div>
+                <div class="star star-position2"></div>
+                <div class="star star-position3"></div>
+                <div class="star star-position4"></div>
+                <div class="star star-position5"></div>
+                <div class="star star-position6"></div>
+                <div class="star star-position7"></div>
+            </div>
+            <div class="box-of-star2">
+                <div class="star star-position1"></div>
+                <div class="star star-position2"></div>
+                <div class="star star-position3"></div>
+                <div class="star star-position4"></div>
+                <div class="star star-position5"></div>
+                <div class="star star-position6"></div>
+                <div class="star star-position7"></div>
+            </div>
+            <div class="box-of-star3">
+                <div class="star star-position1"></div>
+                <div class="star star-position2"></div>
+                <div class="star star-position3"></div>
+                <div class="star star-position4"></div>
+                <div class="star star-position5"></div>
+                <div class="star star-position6"></div>
+                <div class="star star-position7"></div>
+            </div>
+            <div class="box-of-star4">
+                <div class="star star-position1"></div>
+                <div class="star star-position2"></div>
+                <div class="star star-position3"></div>
+                <div class="star star-position4"></div>
+                <div class="star star-position5"></div>
+                <div class="star star-position6"></div>
+                <div class="star star-position7"></div>
+            </div>
+            <div data-js="astro" class="astronaut" id="interactive-astronaut">
+                <div class="head"></div>
+                <div class="arm arm-left"></div>
+                <div class="arm arm-right"></div>
+                <div class="body">
+                    <div class="panel"></div>
+                </div>
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+                <div class="schoolbag"></div>
+            </div>
+
+            <div id="interactive-stars"></div>
+
+            <div class="container hero-content">
+                <h1>Тимур Доткулов</h1>
+                <p>Разрабатываю веб-сайты, веб-приложения и видеоигры</p>
+                <button class="btn">Связаться со мной</button>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Мои работы</h2>
+                <p>Здесь представлены некоторые из моих последних проектов. Каждый проект создан с вниманием к деталям и
+                    фокусом на пользовательский опыт.</p>
+
+                <div class="portfolio-slider">
+                    <div class="slider-container" id="sliderContainer">
+                        <article class="portfolio-item slider-item active">
+                            <div class="portfolio-img">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Сайт для кафе "Cafe Krasnodar"</h3>
+                                <p>Ресторан современных вкусов.</p>
+                                <a href="https://cafekrasnodar.ru/?ysclid=mfm9kheb42194169970"
+                                    class="portfolio-link">Посмотреть проект <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item slider-item">
+                            <div class="portfolio-img">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>2D игрa</h3>
+                                <p>Создал 2D игру с помощью платформера Godot Engine на C#.</p>
+                                <span class="portfolio-link" onclick="downloadFile('project1.zip', 'project1.zip')">
+                                    Скачать проект <i class="fas fa-download"></i>
+                                </span>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item slider-item">
+                            <div class="portfolio-img">
+                                <i class="fab fa-playstation"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>3D игра</h3>
+                                <p>Создал 3D игру с помощью Python на движке ursina</p>
+                                <span class="portfolio-link" onclick="downloadFile('project2.zip', 'project2.zip')">
+                                    Скачать проект <i class="fas fa-download"></i>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="slider-nav">
+                        <button class="slider-prev" id="sliderPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots">
+                        </div>
+                        <button class="slider-next" id="sliderNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-wrapper">
+                        <div class="about-text">
+                            <h2>Обо мне</h2>
+                            <p>Привет! Меня зовут Тимур, и я занимаюсь веб-разработкой 2 года. Моя страсть -
+                                создавать интерфейсы, которые не только красиво выглядят, но и обеспечивают безупречный
+                                пользовательский опыт.</p>
+                            <p>Я фокусируюсь на создании семантически правильной, доступной и оптимизированной верстки,
+                                которую
+                                в дальнейшем легко интегрировать с системами управления контентом или
+                                фронтенд-фреймворками.</p>
+                            <p>А так же занимаюсь созданием игр как 2D и 3D.</p>
+                        </div>
+                        <div class="about-visual">
+                            <div class="section-banner">
+                                <div id="star-1">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-2">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-3">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-4">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-5">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-6">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+
+                                <div id="star-7">
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-bottomright"></div>
+                                        <div id="curved-corner-bottomleft"></div>
+                                    </div>
+                                    <div class="curved-corner-star">
+                                        <div id="curved-corner-topright"></div>
+                                        <div id="curved-corner-topleft"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Мои навыки</h2>
+                <p>Вот технологии и инструменты, которые я использую в работе. Я постоянно учусь и совершенствую свои
+                    навыки, чтобы оставаться в курсе последних тенденций веб-разработки.</p>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Фронтенд</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>HTML</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 100%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>CSS</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 100%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 100%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>React</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 75%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> GameDev</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>C#</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width:60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Unity</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 10%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Godot</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 78%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>unreal engine</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 3%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Бэкенд</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>Node.js</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 95%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>PHP</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 0%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>MySQL</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 35%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>MongoDB</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 0%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>Git</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 68%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Blender</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 45%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Figma</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 35%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>VS Code</span>
+                                <div class="skill-level">
+                                    <div class="skill-value" style="width: 100%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h2>Как со мной связаться</h2>
+                <p>Готов к новым проектам! Вы можете написать мне на почту или в мессенджеры. Я всегда открыт для
+                    обсуждения новых возможностей и сотрудничества.</p>
+
+                <div class="contact-links">
+                    <a href="mailto:dotkulovtimur9@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://t.me/Tim_Dot" class="contact-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>Телеграм</span>
+                    </a>
+                    <a href="https://github.com/Dotkulov" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
+                <address class="mt-4">
+                    <p>г. Нальчик, ул. Орджоникидзе, д. 172</p>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="logo">
+                <strong>Тимур Доткулов</strong> / Веб-разработчик / GameDev
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2025 Тимур Доткулов.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="download-notification" id="downloadNotification">
+        <i class="fas fa-download"></i>
+        <span id="notificationText">Началась загрузка файла...</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
